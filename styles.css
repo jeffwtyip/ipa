@@ -1,0 +1,9 @@
+body { font-family: system-ui, sans-serif; padding: 24px; }
+.grid { display: grid; grid-template-columns: repeat(6, 56px); gap: 10px; margin-top: 16px; }
+.cell { font-size: 22px; padding: 10px; cursor: pointer; }
+
+.modal { position: fixed; inset: 0; display: none; place-items: center; background: rgba(0,0,0,.6); }
+.modal.is-open { display: grid; }
+.modal__panel { width: min(720px, 92vw); background: white; padding: 16px; border-radius: 12px; }
+.modal__close { float: right; font-size: 22px; }
+#player { width: 100%; margin-top: 10px; }
