@@ -8,21 +8,13 @@
 </head>
 <body>
   <h1>IPA Video Chart</h1>
+  <p class="subtitle">Click any IPA symbol to play its video.</p>
 
-  <!-- Start small; add more symbols later -->
-  <main class="grid" id="ipaGrid">
-    <button class="cell" data-symbol="p">p</button>
-    <button class="cell" data-symbol="t">t</button>
-    <button class="cell" data-symbol="k">k</button>
-    <button class="cell" data-symbol="m">m</button>
-    <button class="cell" data-symbol="n">n</button>
-    <button class="cell" data-symbol="ŋ">ŋ</button>
-  </main>
+  <main id="ipaChart" class="ipa-chart" aria-label="IPA chart"></main>
 
-  <!-- Modal -->
   <div class="modal" id="modal" aria-hidden="true">
     <div class="modal__panel" role="dialog" aria-modal="true" aria-label="IPA video">
-      <button class="modal__close" id="closeBtn">×</button>
+      <button class="modal__close" id="closeBtn" aria-label="Close">×</button>
       <div class="modal__title" id="modalTitle"></div>
       <video id="player" controls playsinline></video>
     </div>
